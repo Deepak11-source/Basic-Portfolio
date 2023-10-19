@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height:1.5;
+    letter-spacing: 1.5px;
+}
+
+.wrap{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("register.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test{
+    padding: 30px 100px;
+}
+
+article h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+article h1::after{
+    content: "";
+    height: 5px;
+    width: 225px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+.cert li{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height:1.5;
+    letter-spacing: 1.5px;
+    text-align: justify;
+} 
+
+article h5{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+article p{
+    font-size: 17px;
+    color: #ffe70b;
+}
+
+input[type=submit] {
+    background-color: #0f0046;
+    /* border: none; */
+    border:3pxsolid#eee;
+    border-radius:30px;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background:#016ABC;
+    color:#fff;
+    border:1pxsolid#eee;
+    border-radius:20px;
+    box-shadow:5px5px5px#eee;
+    text-shadow:none;
+}

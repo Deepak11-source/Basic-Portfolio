@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script type="text/javascript" src="register.js"></script>  
+        <link rel="stylesheet" type="text/css" href="register.css"> 
+            
+            
+        
+    </head>
+    <body onload = "myonload()" onresize="myonresize()" onbeforeprint="myonbeforeprint()">
+        <div align="center">
+            <form onreset="formreset()" onsubmit="usersubmitted()" method="post" action="register.php">
+                <fieldset style="height:610 ; width:500 ; border: 5px solid rgb(92, 92, 92);  background: rgba(0, 0, 0, 0.4);">
+                 
+                <h1>Registration Form</h1> 
+                <label for="name" class="name">Name: </label>
+                <input type="text" placeholder="Name" name="name" required>
+                <p> 
+                <label for="username" class="uname" >Enter your Email: </label>
+                <input id="username" name="email"  type="text" placeholder="mymail@mail.com" required />
+                </p>
+                <p> 
+                    <label>Password :
+                        <input name="password" id="password" type="password" name="password" required />
+                      </label>
+                      <br><br>
+                      <label>Confirm Password:
+                        <input type="password" name="confirm_password" required /> 
+                        <span id='message'></span>
+                      </label> 
+                </p>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="m" />Male
+                <input type="radio" name="gender" value="f" />Female
+                <input type="radio" name="gender" value="o" />Other
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                <label for="add">Address:</label>
+                <textarea  id="ta" name="address" rows="3" cols="25"onmousewheel="mouseScroll()" onmouseout="mouseScrollOut()" oncopy="userCopying()" oncut="userCut()" onpaste="userPasting()"></textarea>
+                <br><br>
+                <label for="pg">Interested in : </label>
+                <select id="pg" name="interest">
+                    <option value="fwd">Front-End Web Development</option>
+                    <option value="bwd">Back-End Web Development</option>
+                    <option value="md">Mobile Development</option>
+                    <option value="gd">Game Development</option>
+                    <option value="da">Desktop Applications</option>
+                    <option value="sp">System Programming</option>
+
+                </select>
+                <br><br>
+                <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+                <br><br>
+                       
+                
+                <input type="reset" value="Clear/Reset"/>
+                <input type="submit" value="Submit">  
+
+
+            </form>   
+    </body>
+</html>
